@@ -1,0 +1,814 @@
+<!--
+  Copyright 2023 Readium Foundation. All rights reserved.
+  Use of this source code is governed by the BSD-style license
+  available in the top-level LICENSE file of the project.
+-->
+
+<resources>
+    <!-- AI Stop / Cancel -->
+    <string name="ai_stop">Остановить</string>
+    <string name="ai_operation_canceled">Операция остановлена</string>
+    <string name="library_empty_swipe_hint">Свайпните вниз для поиска всех книг на телефоне. Это может занять много времени.</string>
+    <!-- AI Setup: provider/model -->
+    <string name="ai_setup_provider">Провайдер</string>
+    <string name="ai_setup_chat_model">Модель чата</string>
+    <string name="ai_setup_embedding_model">Embedding-модель (опционально)</string>
+    <string name="ai_setup_default_model">По умолчанию: %1$s</string>
+    <string name="ai_setup_model_helper">Если оставить пустым, будет использована модель по умолчанию</string>
+    <string name="ai_setup_save_success">✅ %1$s сохранён, модель: %2$s</string>
+    <string name="reader_page_position">Страница %1$d / %2$d</string>
+    <!-- Chat book attachment -->
+    <string name="ai_book_cover_desc">Обложка книги</string>
+
+    <string name="scroll_axis">Направление листания</string>
+    <string name="spread">Разворот</string>
+    <string name="fit">Масштаб</string>
+    <string name="bookmark_removed">Закладка удалена</string>
+    <string name="through_resource">%d%%</string>
+    <!-- Chat history sidebar -->
+    <string name="chat_history_title">История чатов</string>
+    <string name="new_chat">Новый чат</string>
+    <string name="chat_default_title">Новый чат</string>
+    <string name="rename_chat">Переименовать чат</string>
+    <string name="delete_chat">Удалить чат</string>
+    <string name="delete_chat_confirm">Чат «%1$s» и все его сообщения будут удалены. Это действие нельзя отменить.</string>
+    <string name="download_chat">Скачать (.txt)</string>
+    <string name="share_chat">Поделиться чатом</string>
+    <string name="chat_item_meta">%1$s • сообщений: %2$d</string>
+    <string name="chat_date_yesterday">Вчера</string>
+    <string name="chat_export_saved">Чат сохранён в Загрузки (%1$s)</string>
+    <string name="chat_export_error">Не удалось сохранить чат</string>
+    <!-- About & chat actions sheet -->
+    <string name="about_title">О приложении</string>
+    <string name="about_app_description">Light Reader — это приложение для чтения электронных книг, созданное на основе инструментария Readium. Оно поддерживает форматы EPUB, PDF, FB2, TXT и DOCX, синтез речи (TTS), поиск, выделение текста, закладки и статистику чтения, а также содержит встроенного ИИ-ассистента, способного отвечать на вопросы по вашим книгам.</string>
+    <string name="chat_actions_subtitle">Действия с чатом</string>
+
+    <!-- About screen: legal -->
+    <string name="app_display_name">Light Reader</string>
+    <string name="about_tagline">Читалка электронных книг</string>
+    <string name="about_version_chip">Версия %1$s</string>
+    <string name="legal_section_title">Правовая информация</string>
+    <string name="legal_updated">Обновлено: 26 июля 2026 г.</string>
+    <string name="open_source_section_title">Открытое ПО</string>
+    <string name="open_source_readium">Приложение построено на основе открытого набора инструментов Readium Foundation (лицензия BSD-3-Clause) и других компонентов с открытым исходным кодом.</string>
+
+
+
+
+        <!-- Условия использования -->
+        <string name="terms_of_use_title">Условия использования</string>
+        <string name="terms_of_use_text">
+<b>1. Статус ПО и лицензия</b>\n
+Приложение Light Reader не является программным обеспечением с открытым исходным кодом. Все эксклюзивные авторские и смежные права на приложение сохраняются за разработчиком. Пользователю предоставляется личная, неисключительная лицензия на использование приложения исключительно в личных некоммерческих целях.\n\n
+<b>2. Использование ИИ-функций (BYOK)</b>\n
+Приложение поддерживает работу с сервисами искусственного интеллекта на основе модели «Принеси свой ключ» (Bring Your Own Key — BYOK). Вы самостоятельно предоставляете API-ключи внешних провайдеров (Google Gemini, OpenAI, DeepSeek, OpenRouter). Вы несете полную ответственность за соблюдение правил использования и тарифов соответствующих сторонних сервисов.\n\n
+<b>3. Права на контент</b>\n
+Разработчик не предоставляет книги или иной защищенный авторским правом контент. Пользователь самостоятельно несет ответственность за легальность загружаемых и обрабатываемых в приложении файлов (EPUB, PDF, FB2, TXT, DOCX).\n\n
+<b>4. Отказ от гарантий</b>\n
+Приложение предоставляется на условиях «как есть» (AS IS). Разработчик не гарантирует бесперебойную работу сторонних API, корректность генераций ИИ и не несет ответственности за возможную потерю локальных данных.
+    </string>
+
+        <!-- Политика конфиденциальности -->
+        <string name="privacy_policy_title">Политика конфиденциальности</string>
+    <string name="privacy_policy_text">
+<b>1. Локальное хранение данных</b>
+Все ваши книги, прогресс чтения, закладки, локальные чаты и историю взаимодействия с ассистентом Light Reader хранит строго на вашем устройстве. Мы не собираем, не передаём через свои серверы и не храним ваши личные файлы на внешних серверах.
+<b>2. Безопасность API-ключей</b>
+Введенные вами ключи API (Google Gemini, OpenAI, DeepSeek, OpenRouter) шифруются с использованием системных средств Android (EncryptedSharedPreferences) и хранятся исключительно в защищенном хранилище устройства.
+<b>3. Передача данных сторонним сервисам</b>
+При отправке запросов ИИ-помощнику (включая текстовые фрагменты книг в рамках RAG-поиска) данные передаются напрямую выбранному вами провайдеру (Google, OpenAI, DeepSeek или OpenRouter) с использованием вашего API-ключа. Мы не передаём данные через свои серверы; передача происходит напрямую с вашего устройства провайдеру по вашей инициативе. Мы не являемся посредниками в этом обмене и не сохраняем логи ваших запросов.
+<b>4. Разрешения устройства</b>
+Приложение запрашивает доступ к файловой системе исключительно для чтения, конвертации и сохранения локальных книг и обложек в памяти устройства.
+<b>5. Хранение данных</b>
+Все локальные данные, включая книги, прогресс чтения, закладки, чаты, кэшированные эмбеддинги и настройки, хранятся на вашем устройстве до их удаления пользователем или деинсталляции приложения. API-ключи хранятся до их удаления в настройках ИИ или деинсталляции приложения.
+<b>6. Удаление данных</b>
+Вы можете удалить все данные, удалив приложение. Удаление Light Reader стирает все локально сохранённые данные с устройства. Вы также можете удалить отдельные данные, например историю чатов или API-ключи, внутри приложения.
+<b>7. Аналитика и телеметрия</b>
+Light Reader не собирает аналитику, телеметрию, отчёты о сбоях или статистику использования. Мы не используем рекламные идентификаторы и сторонние инструменты отслеживания.
+</string>
+
+    <!-- Readium / README -->
+    <string name="about_readium_based">Built on the Readium Kotlin Toolkit (BSD-3-Clause)</string>
+
+    <string name="readium_section_title">Readium</string>
+    <string name="readium_license_title">Readium Kotlin Toolkit</string>
+    <string name="readium_license_subtitle">BSD 3-Clause License • Copyright (c) 2017, Readium</string>
+
+    <string name="readium_license_text" translatable="false" formatted="false"><![CDATA[
+BSD 3-Clause License
+
+Copyright (c) 2017, Readium
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+]]></string>
+
+    <string name="readme_section_title">README</string>
+    <string name="readme_title">README.md</string>
+    <string name="readme_subtitle">Project description</string>
+
+    <string name="readme_content" translatable="false" formatted="false"><![CDATA[
+# Light Reader
+
+Приложение представляет собой современную мобильную читалку электронных книг на базе библиотеки **Readium Kotlin Toolkit** для платформы Android. Проект объединяет базовый функционал чтения различных форматов книг, встроенную библиотеку и продвинутые функции работы с искусственным интеллектом (ИИ).
+
+---
+
+## Основные возможности и функционал
+
+### 1. Чтение книг и поддерживаемые форматы
+
+* **Поддержка форматов:** EPUB, PDF, FB2, TXT, DOCX.
+* **Встроенные конвертеры:** Автоматическое преобразование файлов FB2, TXT, DOCX в формат EPUB для комфортного чтения.
+* **Настройка отображения:** Регулировка шрифтов, размера текста, темы оформления (светлая/тёмная), быстрое меню настроек и адаптация под визуальные предпочтения пользователя.
+* **Навигация и закладки:** Сохранение прогресса чтения, создание закладок, выделение текста (Highlights) и переход по оглавлению (Outline).
+* **Синтез речи (Text-to-Speech / TTS):** Озвучивание текста книг с возможностью управления воспроизведением и настройкой голоса.
+* **Поиск:** Поиск по тексту открытой книги.
+
+### 2. Книжная полка и управление библиотекой (Bookshelf)
+
+* **Интерфейс:** Современное отображение списка книг с помощью Jetpack Compose.
+* **Фильтрация и метки:** Обозначение книг статусами «Избранное», «Хочу прочитать» и «Прочитано» через встроенный `BookTagManager`.
+* **Сортировка и метаданные:** Отображение размера файлов, даты добавления, типа формата и процента прочитанного материала.
+* **Генерация обложек:** Автоматическое создание текстовых и графических обложек при их отсутствии.
+
+### 3. Интеграция с искусственным интеллектом (AI Assistant)
+
+Приложение оснащено ИИ-помощником, позволяющим анализировать текст книг, задавать вопросы и вести диалог в контексте загруженного произведения.
+
+* **Поддержка AI-провайдеров:**
+* **Google Gemini** (прямая интеграция с полнотекстовым анализом).
+* **OpenAI** (модели типа `gpt-4o-mini` и подсистема эмбеддингов).
+* **DeepSeek** (модели `deepseek-chat` и локальные/облачные варианты).
+* **OpenRouter** (доступ к множеству сторонних моделей).
+
+* **RAG (Retrieval-Augmented Generation):**
+* Разбиение текста книги на фрагменты (чанки) с сохранением перекрытия.
+* Генерирование и кэширование векторных эмбеддингов текста.
+* Поиск наиболее релевантных отрывков из книги с помощью косинусного сходства для точного ответа ИИ на вопросы по содержанию.
+
+* **Управление чатами:**
+* Сохранение истории диалогов в формате JSON.
+* Создание новых сессий, переименование, удаление.
+* Экспорт диалогов в текстовый формат `.txt` и возможность делиться результатами.
+* Прикрепление конкретной книги из библиотеки к текущему чату.
+]]></string>
+
+
+
+
+    <string name="developer_section_title">Разработчик</string>
+    <string name="developer_name">Alexander Harebava</string>
+    <string name="developer_github">GitHub</string>
+    <string name="developer_github_url">https://github.com/AlexanderHarebava</string>
+    <string name="developer_email">Email</string>
+    <string name="developer_email_address">aharebava5@gmail.com</string>
+    <string name="developer_telegram">Telegram</string>
+    <string name="developer_telegram_url">https://t.me/LightReaderApp</string>
+    <string name="developer_github_subtitle">Исходный код и баг-репорты</string>
+    <string name="developer_email_subtitle">Обратная связь и предложения</string>
+    <string name="developer_telegram_subtitle">Новости и сообщество</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="quick_settings_title">Быстрые настройки</string>
+    <string name="close">Закрыть</string>
+    <string name="theme_label">Тема</string>
+    <string name="font_size_label">Размер шрифта</string>
+    <string name="decrease_font">Уменьшить</string>
+    <string name="increase_font">Увеличить</string>
+    <string name="font_family_label">Шрифт: %1$s</string>
+    <string name="font_default">По умолчанию</string>
+    <string name="continuous_scroll">Непрерывная прокрутка</string>
+    <string name="advanced_settings">Расширенные настройки</string>
+
+    <!-- AI Dialogs -->
+    <string name="dialog_title_ai_query">Запрос к ИИ</string>
+    <string name="dialog_message_fragment">Фрагмент: «%1$s»</string>
+    <string name="action_send">Отправить</string>
+    <string name="hint_ai_query">Что бы вы хотели узнать? (можно оставить пустым)</string>
+    <string name="toast_ai_analyzing">ИИ анализирует...</string>
+    <string name="dialog_title_ai_response">Ответ ИИ</string>
+    <string name="action_got_it">Понятно</string>
+    <string name="error_with_message">Ошибка: %1$s</string>
+    <string name="ai_prompt_explain_fragment">Объясни этот фрагмент из книги «%1$s»: «%2$s»</string>
+    <string name="ai_prompt_custom_query">Контекст (фрагмент из книги «%1$s»): «%2$s»\nЗадача пользователя: %3$s</string>
+    <string name="ai_system_prompt_literary">Вы — полезный ассистент и литературовед.</string>
+
+    <!-- AI Chat & Picker -->
+    <string name="ai_analyze_book_default">Проанализируй книгу.</string>
+    <string name="ai_error_vector_creation">Ошибка: не удалось создать вектор запроса</string>
+    <string name="ai_error_api_prefix">Ошибка: %1$s</string>
+    <string name="book_picker_count_format">%1$d / %2$d</string>
+    <string name="book_picker_empty">Книги не найдены</string>
+
+    <!-- Bookshelf & UI -->
+    <string name="load_more">Загрузить еще</string>
+    <string name="search_no_results">Ничего не найдено по запросу «%1$s»</string>
+    <string name="library_empty_placeholder">Здесь пока ничего нет</string>
+
+    <!-- API Key Setup -->
+    <string name="api_key_hint_empty">Введите API-ключ</string>
+    <string name="api_key_format_unknown">Неизвестный формат ключа.\nПоддерживаются: OpenRouter (sk-or-...), Google Gemini (AIza...), OpenAI (sk-proj-...), DeepSeek (sk-...)</string>
+    <string name="api_key_saved_success">✅ Ключ %1$s сохранен!</string>
+    <string name="api_key_already_saved">✅ Ключ сохранен (%1$s)</string>
+
+    <!-- Errors & Toasts -->
+    <string name="error_share_failed">Не удалось поделиться файлом</string>
+    <string name="toast_long_press_book">Долгое нажатие: %1$s</string>
+    <string name="ai_error_key_not_configured">API-ключ не настроен. Пожалуйста, перейдите в настройки ИИ.</string>
+    <string name="ai_error_unknown_key_format">Неизвестный формат API-ключа.</string>
+    <string name="ai_error_empty_response">Пустой ответ от ИИ</string>
+    <string name="ai_error_api_generic">Ошибка API: %1$s</string>
+
+    <!-- Bookshelf & UI Hardcoded Strings -->
+    <string name="completed">Прочитано</string>
+    <string name="progress_percent">%d%%</string>
+    <string name="unknown_author">Неизвестный автор</string>
+    <string name="title_missing">*Без названия*</string>
+    <string name="progression_format">Прочитано: %d%%</string>
+
+    <!-- AI Chat Hardcoded Strings -->
+    <string name="ai_chat_placeholder">Задайте вопрос о книге...</string>
+    <string name="ai_thinking">ИИ думает...</string>
+    <string name="ai_error_generic">Что-то пошло не так</string>
+    <string name="share_book_text">Читаю книгу: %1$s</string>
+
+    <!-- AI Chat & System -->
+    <string name="ai_system_prompt_default">Вы — полезный ассистент и литературовед.</string>
+    <string name="ai_role_user">пользователь</string>
+    <string name="ai_role_assistant">ассистент</string>
+    <string name="ai_role_system">система</string>
+    <string name="ai_clipboard_label">Скопированное сообщение ИИ</string>
+
+    <!-- AI Provider Errors -->
+    <string name="ai_error_key_not_configured_provider">API-ключ не настроен. Пожалуйста, перейдите в настройки ИИ.</string>
+    <string name="ai_error_unknown_key_format_provider">Неизвестный формат API-ключа.</string>
+    <string name="ai_cloud_system_prompt">Вы — ИИ-помощник в приложении для чтения книг</string>
+    <string name="ai_error_api_prefix_simple">Ошибка API: %1$s</string>
+    <string name="ai_response_empty">Нет ответа</string>
+
+    <!-- AI Manager Errors -->
+    <string name="ai_error_key_not_configured_manager">API-ключ не настроен. Пожалуйста, перейдите в настройки ИИ.</string>
+    <string name="ai_error_empty_response_manager">Пустой ответ от API</string>
+    <string name="ai_error_connection_manager">Ошибка соединения: %1$s</string>
+    <string name="ai_error_api_response_manager">Ошибка API: %1$d %2$s\n%3$s</string>
+    <string name="ai_error_gemini_empty">Пустой ответ от Gemini API</string>
+
+    <!-- AI Manager / Network -->
+    <string name="ai_error_connection_embedding">Ошибка соединения при получении эмбеддинга: %1$s</string>
+    <string name="ai_error_embeddings_api">Ошибка Embeddings API: %1$d\n%2$s</string>
+    <string name="ai_error_gemini_empty_embedding">Пустой вектор текста от Google Gemini</string>
+    <string name="ai_warn_gemini_overloaded">Gemini API перегружен (ошибка %1$d). Попытка %2$d из %3$d. Ожидание...</string>
+    <string name="ai_error_gemini_api">Ошибка Google Gemini Embeddings API: %1$d\n%2$s</string>
+    <string name="ai_error_network_gemini">Сетевая ошибка при запросе к Gemini: %1$s</string>
+    <string name="ai_error_gemini_max_retries">Не удалось получить вектор текста после %1$d попыток.</string>
+
+    <string name="ai_error_gemini_empty_response">Пустой ответ от Gemini API</string>
+    <string name="ai_error_empty_api_response">Пустой ответ от API</string>
+    <string name="ai_error_api_detailed">Ошибка API: %1$d %2$s\n%3$s</string>
+    <string name="ai_error_connection_generic">Ошибка соединения: %1$s</string>
+    <string name="ai_log_rag_extraction_error">Ошибка извлечения текста из книги для RAG</string>
+    <string name="ai_log_gemini_extraction_error">Ошибка извлечения текста из книги для Gemini</string>
+    <string name="ai_log_failed_get_embeddings">Не удалось получить векторы для пакета %1$d</string>
+    <string name="ai_log_gemini_skip_rag">Gemini: пропуск RAG, книга готова к отправке целиком</string>
+
+    <string name="ai_system_prompt_book_reader">Вы — ИИ-помощник в приложении для чтения книг</string>
+
+    <!-- AI Error Messages -->
+    <string name="ai_empty_reply_fallback">Нет ответа</string>
+    <string name="ai_error_unknown">Неизвестная ошибка</string>
+    <string name="ai_error_api_response">Ошибка API: %1$s</string>
+    <string name="ai_error_key_not_set">API-ключ не настроен. Перейдите в настройки ИИ.</string>
+    <string name="ai_error_empty_response_gemini">Пустой ответ от Gemini API</string>
+
+    <string name="ai_error_unknown_error">Неизвестная ошибка</string>
+    <string name="ai_error_api_with_code">Ошибка API: %1$d %2$s\n%3$s</string>
+    <string name="ai_error_connection">Ошибка соединения: %1$s</string>
+
+    <!-- Statistics & Charts -->
+    <string name="stat_less">Меньше</string>
+    <string name="stat_more">Больше</string>
+    <string name="stat_reset">Сбросить</string>
+    <string name="stat_change_color">Изменить цвет</string>
+    <string name="stat_clear_color">Очистить цвет</string>
+    <string name="stat_unknown_language">Неизвестный язык</string>
+    <string name="stat_cover_image_desc">Обложка книги</string>
+
+    <!-- Book Picker -->
+    <string name="book_picker_title">Выберите книгу</string>
+    <string name="book_picker_search_hint">Название или автор</string>
+    <string name="book_picker_empty_state">Ничего не найдено</string>
+
+    <!-- AI Chat -->
+    <string name="ai_chat_selected_file_label">Выбранный файл</string>
+    <string name="action_send_message">Отправить</string>
+    <string name="action_settings">Настройки</string>
+
+    <!-- Reader Progress -->
+    <string name="progress_zero_percent">0%</string>
+    <!-- Search -->
+    <string name="search_section_default_title">Текст</string>
+
+    <!-- Preferences / UI Components -->
+    <string name="pref_reset_content_description">Сбросить</string>
+
+    <!-- Новые строки для дизайна -->
+    <string name="my_library">Моя библиотека</string>
+    <string name="total_files_count">Всего файлов: %1$d</string>
+    <string name="stat_data">Данные</string>
+    <string name="want_to_read">Хочу прочитать</string>
+
+    <string name="no_files_found">Файлы не найдены</string>
+    <string name="filter_docx">DOCX</string>
+    <string name="added_to_want_to_read_list">Добавлено в список «Хочу прочитать»</string>
+    <string name="removed_from_want_to_read_list">Удалено из списка «Хочу прочитать»</string>
+    <string name="marked_as_read_success">Помечено как прочитанное</string>
+    <string name="marked_as_unread_success">Помечено как непрочитанное</string>
+    <string name="share_book">Поделиться книгой</string>
+    <string name="remove_from_want_to_read">Удалить из списка «Хочу прочитать»</string>
+    <string name="mark_as_unread">Пометить как непрочитанное</string>
+
+    <!-- Названия категорий для чипсов -->
+    <string name="chip_all">Все</string>
+    <string name="stat_data_size">Размер</string>
+    <string name="chip_recent">Недавние</string>
+    <string name="chip_favorites">Избранное</string>
+    <string name="chip_to_read">Хочу прочитать</string>
+    <string name="chip_read">Прочитанные</string>
+    <string name="formats_count_badge">5 форматов</string>
+    <string name="theme_toggle">Переключить тему</string>
+
+    <!-- Описания форматов -->
+    <string name="format_txt_desc">Обычные текстовые документы</string>
+    <string name="format_fb2_desc">Формат электронных книг FB2</string>
+    <string name="format_epub_desc">Универсальный формат EPUB</string>
+    <string name="format_pdf_desc">Документы и книги PDF</string>
+    <string name="format_docx_desc">Документы Microsoft Word</string>
+
+    <!-- Content descriptions для переключателей форматов -->
+    <string name="format_txt_toggle">Включить TXT</string>
+    <string name="format_fb2_toggle">Включить FB2</string>
+    <string name="format_epub_toggle">Включить EPUB</string>
+    <string name="format_pdf_toggle">Включить PDF</string>
+    <string name="format_docx_toggle">Включить DOCX</string>
+
+    <!-- Метки статистики -->
+    <string name="stat_total_books">Всего книг</string>
+    <string name="stat_formats">Форматов</string>
+    <string name="stat_gb_data">ГБ данных</string>
+
+    <!-- Настройки вида -->
+    <string name="view_settings">Настройки вида</string>
+    <string name="spacing_normal">Обычные отступы</string>
+    <string name="spacing_compact">Компактный вид</string>
+
+    <string name="clean_chatai">Очистить чат</string>
+    <string name="clean_allchatai">Вся история переписки будет удалена.</string>
+    <string name="clean">Очистить</string>
+    <string name="cancelai">Отмена</string>
+    <string name="Attached">Книга прикреплена: %1$s</string>
+    <string name="Configuring_AI">Настройка ИИ</string>
+    <string name="keydelleted">Ключ удален. Введите новый ключ для работы ИИ.</string>
+    <string name="keydel">Ключ был удален</string>
+    <string name="keysaved">Ключ сохранен.</string>
+    <string name="needcorrectkey">Введите корректный ключ</string>
+    <string name="keyissaved">Ваш ключ сохранен. Вы можете изменить его здесь.</string>
+    <string name="Ai_messagecopied">Сообщение скопировано</string>
+    <string name="fb2_file">FB2-файл</string>
+    <string name="file_size_unknown">–</string>
+    <string name="file_date_unknown">–</string>
+    <string name="file_type_text">Текстовый файл</string>
+    <string name="file_type_epub">EPUB</string>
+    <string name="file_type_pdf">PDF</string>
+    <string name="file_type_generic">Файл: %1$s</string>
+
+    <string name="added_to_favorites">Добавлено в избранное</string>
+    <string name="removed_from_favorites">Удалено из избранного</string>
+    <string name="added_to_to_read">Добавлено в список «Хочу прочитать»</string>
+    <string name="removed_from_to_read">Удалено из списка «Хочу прочитать»</string>
+    <string name="marked_as_read">Отмечено как прочитанное</string>
+    <string name="marked_as_unread">Помечено как непрочитанное</string>
+
+    <string name="error_opening_file">Ошибка при открытии файла</string>
+    <string name="long_press_book">Длительное нажатие: %1$s</string>
+    <string name="filter_txt">TXT</string>
+    <string name="filter_fb2">FB2</string>
+    <string name="filter_epub">EPUB</string>
+    <string name="filter_pdf">PDF</string>
+
+    <string name="permission_required_search">Требуется разрешение для поиска книг</string>
+    <string name="permission_required_all_files">Требуется доступ ко всем файлам</string>
+    <string name="allow">Разрешить</string>
+    <string name="found_new_files">Найдены и добавлены новые файлы (%1$d)</string>
+
+    <string name="ai_system_prompt">Вы — полезный ассистент и литературовед.</string>
+    <string name="ai_analyze_book">Проанализируйте книгу.</string>
+    <string name="ai_error_vector">Ошибка: не удалось создать вектор для запроса.</string>
+    <string name="ai_prompt_context">Вот соответствующие выдержки из книги:\n%1$s\n\nНа основе них ответьте на запрос: %2$s</string>
+    <string name="ai_error_prefix">Ошибка: %1$s</string>
+    <string name="search_settings_hint">Поиск в настройках…</string>
+    <string name="clear">Прозрачный</string>
+    <string name="preview">Предпросмотр</string>
+    <string name="preview_hint">Нажмите, чтобы увидеть изменения</string>
+    <string name="reset_settings_title">Сбросить настройки?</string>
+    <string name="reset_settings_message">Все пользовательские настройки будут сброшены до значений по умолчанию.</string>
+    <string name="reset_all">Сбросить все</string>
+    <string name="quick_settings">Быстрые настройки</string>
+    <string name="language">Язык</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="decrease">Уменьшить</string>
+    <string name="increase">Увеличить</string>
+    <string name="language_and_direction">Язык и направление</string>
+    <string name="reading_mode">Режим чтения</string>
+    <string name="theme_and_colors">Тема и цвета</string>
+    <string name="fonts">Шрифты</string>
+    <string name="advanced_text_settings">Расширенные настройки текста</string>
+    <string name="styles">Стили</string>
+    <string name="reading_progression">Направление чтения</string>
+    <string name="left_to_right">Слева направо</string>
+    <string name="right_to_left">Справа налево</string>
+    <string name="scroll">Прокрутка</string>
+    <string name="image_filter">Фильтр изображений</string>
+    <string name="action_explain_ai">Объяснить с помощью ИИ</string>
+
+    <string name="ai_system_prompt_explain">Вы — умный ассистент. Объясните смысл следующего отрывка из книги.</string>
+
+    <string name="error_configure_api_key_first">Пожалуйста, сначала настройте API-ключ</string>
+    <string name="error_getting_text">Ошибка при получении текста</string>
+    <string name="error_copying_text">Ошибка при копировании текста</string>
+    <string name="error_no_translation_app">Приложение для перевода не найдено</string>
+    <string name="toast_text_copied">Текст скопирован</string>
+
+    <string name="statistics">Статистика</string>
+    <string name="stat_zero_min">0 мин</string>
+    <string name="stat_hours_mins">%1$d ч. %2$d мин.</string>
+    <string name="stat_mins">%1$d мин.</string>
+    <string name="stat_reading_streak">Дней подряд</string>
+    <string name="stat_days_in_a_row">%1$d d. подряд</string>
+    <string name="stat_currently_reading">Сейчас читаю</string>
+    <string name="stat_unknown_book">Неизвестная книга</string>
+    <string name="stat_time_in_book">Время в книге: %1$s</string>
+    <string name="stat_previously_read">Ранее прочитано</string>
+    <string name="stat_week">Неделя</string>
+    <string name="stat_month">Месяц</string>
+    <string name="stat_year">Год</string>
+    <string name="stat_total_month">Итого за месяц: %1$s</string>
+    <string name="stat_time">Время: %1$s</string>
+    <string name="action_send_text">Отправить текст</string>
+    <string name="txt_untitled">Без названия</string>
+    <string name="txt_unknown_author">Неизвестный автор</string>
+    <string name="txt_chapter_1">Глава 1</string>
+
+    <string name="ai_assistant">ИИ-ассистент</string>
+    <string name="ai_setup">Настройка ИИ</string>
+    <string name="ai_setup_instruction">Для полноценной работы рекомендуется использовать API-ключ Google AI Studio.</string>
+    <string name="ai_setup_api_key_hint">API-ключ</string>
+    <string name="ai_setup_save_key">Сохранить ключ</string>
+    <string name="ai_setup_delete_key">Удалить ключ</string>
+    <string name="ai_chat_selected_file">Выбранный файл</string>
+    <string name="ai_chat_ask_about_book">Задайте вопрос о книге...</string>
+
+    <string name="nav_your_library">Ваша библиотека</string>
+    <string name="action_copy_text">Копировать</string>
+    <string name="action_translate_text">Перевести</string>
+
+    <string name="epubactivity_drm_info">Информация о DRM</string>
+    <string name="epubactivity_set_bookmark">Добавить закладку</string>
+    <string name="epubactivity_settings">Пользовательские настройки</string>
+    <string name="epubactivity_book_nav_options">Навигация по книге</string>
+    <string name="epubactivity_read_aloud_start">Читать вслух</string>
+    <string name="epubactivity_search">Поиск</string>
+    <string name="search">Поиск</string>
+    <string name="sort">Сортировка</string>
+    <string name="sort_by_name">По названию</string>
+    <string name="sort_by_date">По дате добавления</string>
+    <string name="sort_by_size">По размеру</string>
+    <string name="sort_by_last_opened">По дате открытия</string>
+    <string name="title_fragment_drm_management">Управление DRM</string>
+    <string name="more_options">Дополнительно</string>
+    <string name="popup_delete_button">Удалить</string>
+    <string name="metadata_title">Информация о книге</string>
+    <string name="publication_section">Издание</string>
+    <string name="accessibility_section">Специальные возможности</string>
+    <string name="title_label">Название</string>
+    <string name="identifier_label">Идентификатор</string>
+    <string name="author_label">Автор</string>
+    <string name="authors_label">Авторы</string>
+    <string name="publisher_label">Издатель</string>
+    <string name="publishers_label">Издатели</string>
+    <string name="published_label">Дата публикации</string>
+    <string name="show_fields_no_metadata">Показать незаполненные поля</string>
+    <string name="error_book_not_found">Книга не найдена</string>
+    <string name="error_cant_open_book">Не удалось открыть книгу</string>
+    <string name="app_version_header">Версия</string>
+    <string name="app_version_label">Версия приложения:</string>
+    <string name="app_version">2.2.0</string>
+    <string name="github_tab_label">Тег GitHub:</string>
+    <string name="github_tag">2.2.0</string>
+
+    <string name="copyright_label">Авторские права</string>
+    <string name="copyright">\@ 2019 European Digital Reading Lab</string>
+    <string name="bsd_license_label">[Лицензия BSD-3]</string>
+    <string name="bsd_license_label_accessible">[Лицензия BSD-3]</string>
+    <string name="acknowledgements_label">Благодарности</string>
+    <string name="acknowledgements_french_state">Readium R2 не был бы создан без финансовой поддержки правительства Франции.</string>
+    <string name="catalog_list_more">Еще</string>
+    <string name="catalog_detail_download_button">Скачать</string>
+
+    <string name="favorite">Избранное</string>
+    <string name="last_modified">Последнее изменение</string>
+    <string name="mark_as_read">Отметить как прочитанное</string>
+
+    <string name="favorites">Избранное</string>
+    <string name="open_drawer">Открыть меню</string>
+    <string name="close_drawer">Закрыть меню</string>
+
+    <string name="all_files">Все файлы</string>
+    <string name="add_to_favorites">Добавить в избранное</string>
+    <string name="add_to_want_to_read">Добавить в «Хочу прочитать»</string>
+    <string name="to_read">Хочу прочитать</string>
+    <string name="read">Прочитано</string>
+
+    <!-- Accessibility -->
+    <string name="drm_information_header">ИНФОРМАЦИЯ О DRM</string>
+    <string name="drm_label_license_type">Тип лицензии</string>
+    <string name="drm_label_state">Состояние</string>
+    <string name="drm_label_provider">Поставщик</string>
+    <string name="drm_label_issued">Выдана</string>
+    <string name="drm_label_updated">Обновлена</string>
+    <string name="drm_label_rights">ПРАВА</string>
+    <string name="drm_label_prints_left">Осталось распечаток</string>
+    <string name="drm_label_copies_left">Осталось копий</string>
+    <string name="drm_label_start">Начало действия</string>
+    <string name="drm_label_end">Окончание действия</string>
+    <string name="drm_label_actions">ДЕЙСТВИЯ</string>
+    <string name="drm_label_renew">ПРОДЛИТЬ</string>
+    <string name="drm_label_return">ВЕРНУТЬ</string>
+    <string name="zero">00:00</string>
+    <string name="chapter_page">Глава / Страница</string>
+    <string name="progression">Прогресс</string>
+    <string name="timestamp">Временная метка</string>
+
+    <!-- Outlines -->
+    <string name="contents_tab_label">Содержание</string>
+    <string name="bookmarks_tab_label">Закладки</string>
+    <string name="highlights_tab_label">Маркеры</string>
+    <string name="pagelist_tab_label">Список страниц</string>
+    <string name="landmarks_tab_label">Ориентиры</string>
+    <string name="action_mode_menu_highlight">Выделить</string>
+    <string name="action_mode_menu_underline">Подчеркнуть</string>
+    <string name="action_mode_menu_note">Заметка</string>
+    <string name="bookmark_added">Закладка добавлена</string>
+    <string name="bookmark_exists">Закладка уже существует</string>
+    <string name="accessibility_claims">Сведения о доступности</string>
+    <string name="show_empty_fields">Показать пустые поля</string>
+    <string name="show_descriptive_statements">Показать описания</string>
+    <string name="title_catalogs">Каталоги</string>
+    <string name="title_bookshelf">Книжная полка</string>
+    <string name="title_about">О приложении</string>
+    <string name="cover_image">Обложка</string>
+    <string name="details">Подробности</string>
+
+    <string name="share">Поделиться</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="confirm_delete_book_title">Удалить книгу?</string>
+    <string name="confirm_delete_book_text">Вы уверены, что хотите удалить эту книгу?</string>
+    <string name="confirm_delete_catalog_title">Удалить каталог?</string>
+    <string name="confirm_delete_catalog_text">Вы уверены, что хотите удалить этот фид каталога?</string>
+    <string name="increase_legibility">Улучшить читаемость</string>
+    <string name="document">Документ</string>
+    <string name="ebook">Электронная книга</string>
+    <string name="manga">Манга</string>
+    <string name="add_book">Добавить книгу</string>
+    <string name="add_catalog">Добавить фид каталога</string>
+    <string name="ok">ОК</string>
+    <string name="save">Сохранить</string>
+    <string name="enter_title">Введите название</string>
+    <string name="enter_url">Введите URL</string>
+    <string name="invalid_title">Пожалуйста, введите название</string>
+    <string name="invalid_url">Пожалуйста, введите корректный URL</string>
+    <string name="catalog_parse_error">Ошибка обработки фида каталога. Пожалуйста, проверьте URL и повторите попытку.</string>
+    <string name="media_settings">Настройки мультимедиа</string>
+    <string name="fixed_layout_settings">Настройки фиксированной верстки</string>
+    <string name="general_reading_settings">Общие настройки чтения</string>
+    <string name="appearance_settings">Настройки внешнего вида</string>
+    <string name="typography_settings">Настройки типографики</string>
+    <string name="default_voice">По умолчанию</string>
+    <string name="reset">Сбросить</string>
+    <string name="horizontal">Горизонтально</string>
+    <string name="vertical">Вертикально</string>
+    <string name="auto">Авто</string>
+    <string name="never">Никогда</string>
+    <string name="always">Всегда</string>
+    <string name="offset_first_page">Смещение первой страницы</string>
+    <string name="contain">Вписать</string>
+    <string name="cover">Заполнение</string>
+    <string name="width">Ширина</string>
+    <string name="height">Высота</string>
+    <string name="page_spacing">Межстраничный интервал</string>
+    <string name="publisher_styles">Стили издателя</string>
+    <string name="vertical_text">Вертикальный текст</string>
+    <string name="theme">Тема</string>
+    <string name="darken">Затемнить</string>
+    <string name="invert">Инвертировать</string>
+    <string name="none">Нет</string>
+    <string name="text_color">Цвет текста</string>
+    <string name="background_color">Цвет фона</string>
+    <string name="dark">Темная</string>
+    <string name="light">Светлая</string>
+    <string name="sepia">Сепия</string>
+    <string name="typeface">Гарнитура шрифта</string>
+    <string name="original">Оригинал</string>
+    <string name="sans_serif">Без засечек</string>
+    <string name="font_size">Размер шрифта</string>
+    <string name="font_weight">Начертание шрифта</string>
+    <string name="text_normalization">Нормализация текста</string>
+    <string name="alignment">Выравнивание</string>
+    <string name="center">По центру</string>
+    <string name="justify">По ширине</string>
+    <string name="start">По левому краю</string>
+    <string name="end">По правому краю</string>
+    <string name="left">Слева</string>
+    <string name="right">Справа</string>
+    <string name="default_align">По умолчанию</string>
+    <string name="type_scale">Масштаб шрифта</string>
+    <string name="line_height">Межстрочный интервал</string>
+    <string name="paragraph_indent">Абзацный отступ</string>
+    <string name="paragraph_spacing">Интервал между абзацами</string>
+    <string name="word_spacing">Межсловный интервал</string>
+    <string name="letter_spacing">Межбуквенный интервал</string>
+    <string name="hyphens">Переносы</string>
+    <string name="ligatures">Лигатуры</string>
+    <string name="page_margins">Поля страницы</string>
+    <string name="columns">Колонки</string>
+    <string name="presets">Пресеты</string>
+    <string name="return_publication">Это вернет издание в библиотеку</string>
+    <string name="return_button">Вернуть</string>
+
+    <string name="opening_publication_cannot_render">Не удалось отобразить книгу.</string>
+    <string name="opening_publication_audio_engine_initialization">Не удалось открыть книгу, так как не удалось инициализировать аудиодвижок.</string>
+
+    <string name="import_publication_unexpected_io_exception">Не удалось добавить книгу из-за непредвиденной ошибки устройства.</string>
+    <string name="import_publication_download_failed">Не удалось загрузить книгу.</string>
+    <string name="import_publication_no_acquisition">Получение книги невозможно.</string>
+
+    <string name="import_publication_success">Книга добавлена в вашу библиотеку</string>
+    <string name="import_publication_unable_add_pub_database">Не удалось добавить книгу в базу данных.</string>
+    <string name="import_publication_inconsistent_state">Ошибка импорта из-за сбоя системы. Попробуйте еще раз.</string>
+
+    <string name="publication_error_unsupported_asset">Формат файла не поддерживается</string>
+    <string name="publication_error_network_forbidden">Сервер запретил доступ к ресурсу.</string>
+    <string name="publication_error_network_not_found">Файл не найден на сервере.</string>
+    <string name="publication_error_network_unreachable">Сервер недоступен.</string>
+
+    <string name="publication_error_network_timeout">Превышено время ожидания ответа от сервера.</string>
+    <string name="publication_error_network_ssl_handshake">Произошла ошибка SSL-соединения.</string>
+    <string name="publication_error_network_unexpected">Произошла непредвиденная сетевая ошибка.</string>
+    <string name="publication_error_filesystem_not_found">Файл не найден.</string>
+    <string name="publication_error_filesystem_forbidden">У вас нет прав доступа к этому файлу.</string>
+    <string name="publication_error_filesystem_unexpected">Произошла непредвиденная ошибка файловой системы.</string>
+    <string name="publication_error_filesystem_insufficient_space">Недостаточно свободного места на устройстве.</string>
+    <string name="publication_error_incorrect_credentials">Указаны неверные учетные данные.</string>
+    <string name="publication_error_restricted">У вас нет доступа для открытия этой книги</string>
+    <string name="publication_error_out_of_memory">Недостаточно оперативной памяти для открытия книги.</string>
+    <string name="publication_error_scheme_not_supported">Источник книги не поддерживается.</string>
+    <string name="publication_error_invalid_publication">Файл книги поврежден.</string>
+    <string name="publication_error_unexpected">Произошла непредвиденная ошибка.</string>
+
+    <!-- LcpError User Messages -->
+    <string name="lcp_error_license_interaction_not_available">Это действие недоступно</string>
+    <string name="lcp_error_license_profile_not_supported">Лицензия содержат неподдерживаемый профиль. Обработка невозможно.</string>
+    <string name="lcp_error_crl_fetching">Не удалось получить список отзыва сертификатов (CRL).</string>
+    <string name="lcp_error_network">Ошибка сети</string>
+    <string name="lcp_error_runtime">Непредвиденная ошибка LCP</string>
+    <string name="lcp_error_unknown">Неизвестная ошибка LCP</string>
+
+    <string name="lcp_error_license_status.cancelled">Лицензия была аннулирована %1$s</string>
+    <string name="lcp_error_license_status.returned">Лицензия была возвращена %1$s</string>
+    <string name="lcp_error_license_status.not_started">Срок действия лицензии начинается %1$s</string>
+    <string name="lcp_error_license_status.expired">Срок действия лицензии истек %1$s</string>
+    <plurals name="lcp_error_license_status.revoked">
+        <item quantity="one">Эта лицензия была отозвана поставщиком %1$s. Она зарегистрирована на %2$d устройстве.</item>
+        <item quantity="few">Эта лицензия была отозвана поставщиком %1$s. Она зарегистрирована на %2$d устройствах.</item>
+        <item quantity="many">Эта лицензия была отозвана поставщиком %1$s. Она зарегистрирована на %2$d устройствах.</item>
+        <item quantity="other">Эта лицензия была отозвана поставщиком %1$s. Она зарегистрирована на %2$d устройствах.</item>
+    </plurals>
+
+    <string name="lcp_error_renew.renew_failed">Не удалось продлить лицензию на книгу.</string>
+    <string name="lcp_error_renew.invalid_renewal_period">Недопустимый период продления. Не удалось продлить лицензию.</string>
+    <string name="lcp_error_renew.unexpected_server_error">На сервере произошла непредвиденная ошибка</string>
+
+    <string name="lcp_error_return.return_failed">Не удалось вернуть книгу.</string>
+    <string name="lcp_error_return.already_returned_or_expired">Книга уже была возвращена ранее или срок ее действия истек.</string>
+    <string name="lcp_error_return.unexpected_server_error">На сервере произошла непредвиденная ошибка</string>
+
+    <string name="lcp_error_parsing">Файл JSON содержит недействительные данные</string>
+    <string name="lcp_error_parsing.malformed_json">Некорректный формат JSON, невозможно обработать.</string>
+    <string name="lcp_error_parsing.license_document">JSON не является валидным лицензионным документом.</string>
+    <string name="lcp_error_parsing.status_document">JSON не является валидным документом состояния.</string>
+
+    <string name="lcp_error_container.open_failed">Не удалось открыть контейнер лицензии</string>
+    <string name="lcp_error_container.file_not_found">Лицензия не найдена в контейнере</string>
+    <string name="lcp_error_container.read_failed">Не удалось прочитать лицензию из контейнера</string>
+    <string name="lcp_error_container.write_failed">Не удалось записать лицензию в контейнер</string>
+
+    <string name="lcp_error_license_integrity.certificate_revoked">Сертификат отозван в CRL</string>
+    <string name="lcp_error_license_integrity.invalid_certificate_signature">Сертификат не подписан доверенным центром (CA)</string>
+    <string name="lcp_error_license_integrity.invalid_license_signature_date">Лицензия выдана на основе просроченного сертификата.</string>
+    <string name="lcp_error_license_integrity.invalid_license_signature">Подпись лицензии не совпадает</string>
+    <string name="lcp_error_license_integrity.invalid_user_key_check">Недействительный ключ пользователя</string>
+
+    <string name="lcp_error_decryption.content_key_decrypt_error">Не удалось расшифровать ключ содержимого с помощью ключа пользователя.</string>
+    <string name="lcp_error_decryption.content_decrypt_error">Не удалось расшифровать содержимое с помощью ключа содержимого.</string>
+
+    <string name="missing_lcp_support">Приложение скомпилировано без поддержки LCP.</string>
+    <string name="reader_error">Ошибка</string>
+    <string name="opening_error">Не удалось открыть книгу</string>
+    <string name="import_error">Ошибка импорта</string>
+
+    <string name="failed_parsing_catalog">Не удалось разобрать каталог</string>
+    <string name="no_result">Нет результатов</string>
+    <string name="note">Заметка</string>
+    <string name="add_a_note">Добавить заметку</string>
+    <string name="add_an_annotation">Добавить аннотацию</string>
+    <string name="delete_highlight_or_annotation">Удалить выделение или аннотацию</string>
+    <string name="yellow">Желтый</string>
+    <string name="green">Зеленый</string>
+    <string name="blue">Синий</string>
+    <string name="red">Красный</string>
+    <string name="orange">Оранжевый</string>
+    <string name="purple">Фиолетовый</string>
+    <string name="seek_bar">Перемотка</string>
+    <string name="go_backward_30_seconds">Назад на 30 секунд</string>
+    <string name="play_or_pause">Воспроизведение / Пауза</string>
+    <string name="go_forward_30_seconds">Вперед на 30 секунд</string>
+
+    <string name="tts_error_initialization">Не удалось инициализировать движок озвучки (TTS).</string>
+    <string name="tts_error_language_support_incomplete">Языку %s требуются дополнительные голосовые данные. Скачать их?</string>
+    <string name="tts_error_network">Сетевая ошибка при работе TTS</string>
+    <string name="tts_error_other">Произошла ошибка при синтезе речи.</string>
+    <string name="tts_next">Вперед</string>
+    <string name="tts_pause">Пауза</string>
+    <string name="tts_play">Воспроизвести</string>
+    <string name="tts_previous">Назад</string>
+    <string name="speed_rate">Скорость</string>
+    <string name="pitch_rate">Высота тона</string>
+    <string name="tts_settings">Настройки озвучки</string>
+    <string name="tts_stop">Остановить</string>
+    <string name="tts_voice">Голос</string>
+
+    <string name="search_error_not_searchable">Поиск по этой книге недоступен</string>
+    <string name="search_error_cancelled">Поиск отменен</string>
+    <string name="search_error_other">Произошла ошибка при поиске</string>
+
+    <string name="error_unexpected">Произошла непредвиденная ошибка.</string>
+
+    <string name="info">Информация</string>
+</resources>

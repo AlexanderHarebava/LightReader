@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_text_copied">Text copied</string>
+    <string name="action_translate_text">Translate</string>
+    <string name="action_mode_menu_highlight">Highlight</string>
+    <string name="action_mode_menu_underline">Underline</string>
+    <string name="action_mode_menu_note">Note</string>
+    <string name="action_explain_ai">Explain AI</string>
+    <string name="action_send_text">Send text</string>
+    <string name="error_no_translation_app">Translation app not found</string>
+</resources>

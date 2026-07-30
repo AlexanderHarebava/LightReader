@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<color name="ThemeReader">#FFFFFF</color>
+   <color name="Main_Theme">#FEF7FF</color>
+
+    <!-- Outline & Inverse -->
+
+        <!-- Legacy colors (оставим для совместимости, но постепенно уберём) -->
+        <color name="dark_gray">#1C1B1F</color> <!-- заменяем на onSurface -->
+        <color name="light_gray">#79747E</color> <!-- заменяем на outline или onSurfaceVariant -->
+
+    <color name="orange">#ffffff</color>
+        <color name="blue">#2979FF</color> <!-- primary -->
+        <color name="green">#4CAF50</color> <!-- можно оставить как акцентный, но лучше использовать tertiary -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="md_theme_primary">#2C55A5</color> <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#D6E3FF</color>
+    <color name="md_theme_onPrimaryContainer">#001B3F</color>
+
+    <color name="md_theme_secondary">#565E71</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#DAE2F9</color>
+    <color name="md_theme_onSecondaryContainer">#131C2C</color>
+
+    <color name="md_theme_tertiary">#705574</color>
+    <color name="md_theme_onTertiary">#FFFFFF</color>
+    <color name="md_theme_tertiaryContainer">#FAD8FD</color>
+    <color name="md_theme_onTertiaryContainer">#28132E</color>
+
+    <color name="md_theme_background">#FDFBFF</color>
+    <color name="md_theme_onBackground">#1A1C1E</color>
+    <color name="md_theme_surface">#FDFBFF</color>
+    <color name="md_theme_onSurface">#1A1C1E</color>
+    <color name="md_theme_surfaceVariant">#DFE2EB</color>
+    <color name="md_theme_onSurfaceVariant">#43474E</color>
+
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onErrorContainer">#410002</color>
+
+    <color name="md_theme_outline">#73777F</color>
+    <color name="md_theme_outlineVariant">#C3C6CF</color>
+    <color name="md_theme_inverseSurface">#2F3033</color>
+    <color name="md_theme_inverseOnSurface">#F1F0F4</color>
+    <color name="md_theme_inversePrimary">#AAC7FF</color>
+
+    <color name="my_status_bar_color">#FDFBFF</color>
+
+    <color name="textColorPrimary">#1A1C1E</color>
+    <color name="textColorSecondary">#43474E</color>
+    <color name="colorBackground">#FDFBFF</color>
+
+    <color name="gold">#F5C542</color>
+    <color name="tag_favorite">#F5C542</color>
+    <color name="tag_to_read">#2C55A5</color>
+    <color name="tag_read">#10B981</color>
+    <color name="tag_type">#43474E</color>
+
+    <color name="chip_filter_active">#2C55A5</color>
+    <color name="chip_filter_inactive">#DFE2EB</color>
+    <color name="chip_filter_text_inactive">#43474E</color>
+    <color name="chip_filter_text_active">#FFFFFF</color>
+
+    <color name="glass_background">#80FFFFFF</color>
+    <color name="glass_stroke">#33000000</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+
+
+
+
+</resources>

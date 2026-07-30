@@ -1,0 +1,68 @@
+<!--
+  Copyright 2023 Readium Foundation. All rights reserved.
+  Use of this source code is governed by the BSD-style license
+  available in the top-level LICENSE file of the project.
+-->
+
+<resources>
+    <style name="ScrollbarStyle">
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb</item>
+        <item name="android:scrollbarSize">6dp</item>
+    </style>
+
+    <style name="RoundedCorner12">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="RoundedCornerCover" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="SwipeRefreshProgress" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateTint">?attr/colorPrimary</item>
+    </style>
+
+
+    <style name="ChipFilterInactive" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_filter_background_selector</item>
+        <item name="android:textColor">@color/chip_filter_text_selector</item>
+        <item name="chipStrokeColor">@android:color/transparent</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">5dp</item>
+        <item name="chipMinHeight">36dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="chipMinTouchTargetSize">36dp</item>
+    </style>
+
+    <style name="RoundedCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">9dp</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@null</item>
+        <item name="elevation">0dp</item>
+        <item name="android:background">?android:colorBackground</item>
+    </style>
+
+    <!-- Стиль для активной чипсы -->
+    <style name="ChipFilterActive" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_filter_active</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="chipStrokeColor">@android:color/transparent</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">5dp</item>
+        <item name="chipMinHeight">36dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="chipMinTouchTargetSize">36dp</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+
+
+</resources>
