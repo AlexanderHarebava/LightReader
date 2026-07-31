@@ -41,12 +41,13 @@ The application features an AI assistant capable of analyzing book texts, answer
     *   Exporting dialogs to `.txt` format and sharing capabilities.
     *   Attaching specific books from the library to the current chat session.
 
-<img width="300"  alt="Screenshot_20260728_181225" src="https://github.com/user-attachments/assets/1803ed1c-a650-46cb-afad-6550ef87416b" />
-<img width="300" alt="Screenshot_20260728_181257" src="https://github.com/user-attachments/assets/9a1b75d3-e27d-4257-b4db-bb1aff5e4e37" />
-<img width="300"  alt="Screenshot_20260728_180242" src="https://github.com/user-attachments/assets/d00f51d1-0709-40c2-bd87-65d9bb1b6689" />
-<img width="300" alt="Screenshot_20260728_175252" src="https://github.com/user-attachments/assets/d9122455-ef40-4f27-8095-229d75eb29cd" />
-<img width="300" alt="Screenshot_20260728_174511" src="https://github.com/user-attachments/assets/a4c2286f-78b6-45c5-a381-bc88e0f095b0" />
-<img width="300" alt="Screenshot_20260728_174408" src="https://github.com/user-attachments/assets/b8ed8ba9-d929-45dc-b4e6-ae94b045f6e9" />
+<img width="300"  alt="Screenshot_20260730_165716" src="https://github.com/user-attachments/assets/e4287b41-dc55-4a4f-8adb-53177bcd0afa" />
+<img width="300"  alt="Screenshot_20260730_165351" src="https://github.com/user-attachments/assets/51f477e7-d67d-4095-8dc5-ef02ed62e8fb" />
+<img width="300"  alt="Screenshot_20260730_165909" src="https://github.com/user-attachments/assets/25b9e021-d5bb-4a44-b29c-9e93108aee6d" />
+<img width="300"  alt="Screenshot_20260730_165733" src="https://github.com/user-attachments/assets/5a18f25f-df58-40db-b04a-810e76f78abd" />
+<img width="300"  alt="Screenshot_20260730_165301" src="https://github.com/user-attachments/assets/43f8b273-ae1c-4536-9e8e-10eeef5dc10f" />
+<img width="300"  alt="Screenshot_20260730_165238" src="https://github.com/user-attachments/assets/7e4aeed1-cd4e-4ef5-946c-2013821341ca" />
+
 
 Libraries 
 
