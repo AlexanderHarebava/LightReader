@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Все атрибуты можно не дублировать, достаточно переопределить специфичные -->
-        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
-    </style>
-</resources>
